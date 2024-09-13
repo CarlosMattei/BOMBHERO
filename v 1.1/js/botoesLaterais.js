@@ -24,4 +24,22 @@ $(document).ready(function () {
             console.log('Tesoura não ativada!');
         }
     });
+    let pilhas = $('.pilha'); // Seleciona todos os elementos com a classe 'pilha'
+    
+    $('#removePilhas').click(function() {
+        if (!window.senhaVerificada) {
+            alert('Você deve verificar a senha correta primeiro.');
+            return;
+        }
+        
+        if (pilhas.length > 0) {
+            // Remove a última pilha da lista
+            $(pilhas[pilhas.length - 1]).remove();
+            // Atualiza a lista de pilhas
+            pilhas = $('.pilha');
+        } else {
+            alert('Todas as pilhas já foram removidas.');
+        }
+    });
+
 });
