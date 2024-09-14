@@ -91,30 +91,37 @@ function FioAzul(){
     startTimer(currentTimer, display); 
 }
 function FioVermelho() {
-    window.location.href = 'falha.html'; // Redireciona para a página de falha
+    window.location.href = 'cutsceneFalha.html'; // Redireciona para a página de falha
 }
 
+let pilhas = $('.pilha');
+let fioAmareloVerifica = 1;
+
 function FioAmarelo() {
-    const pilhasRemovidas = $('.pilha').length === 0; // Verifica se todas as pilhas foram removidas
-    if (pilhasRemovidas) {
-        alert('Você cortou o fio amarelo com sucesso!');
+    if (fioAmarelo.cortarFio = false || senhaVerificada === false) { // Use === for comparison, not =
+        window.location.href = 'cutsceneFalha.html';
         // Lógica adicional se necessário
-    } else {
-        window.location.href = 'falha.html'; // Redireciona para a página de falha
+    } else if (fioAmarelo.cortarFio = false || senhaVerificada === true) {
+        fioAmareloVerifica = 2;
+        console.log(fioAmareloVerifica);
     }
 }
 
 function verificarSenha() {
     const senha = Array.from(numerosSelecionados).join('');
     if (senha === senhaCorreta) {
-        alert('Senha correta! Acesso concedido.');
         window.senhaVerificada = true; // Define a senha como verificada globalmente
         AbrirTampa();
+
+        const audio = document.getElementById('sound-effect-senha'); // assume you have an <audio> element with this id
+        audio.play();
     } else {
         subtractOneMinute(); // Chama a função para subtrair 1 minuto
         TimerVermelho();
         limparNumerosSelecionados(numerosSelecionados);
         window.senhaVerificada = false; // Define a senha como não verificada globalmente
+        const audio = document.getElementById('sound-effect-erro'); // assume you have an <audio> element with this id
+        audio.play();
     }
 }
 
@@ -184,3 +191,18 @@ document.querySelectorAll('.key').forEach(key => {
     startTimer(tenMinutes, display);
 }; 
 
+let vitoria = function () {
+    window.location.href = 'sucesso.html';
+};
+
+function playSound() {
+    const audio = document.getElementById('sound-effect'); // assume you have an <audio> element with this id
+    audio.play();
+  }
+  
+  document.querySelectorAll('.key').forEach(key => {
+    key.addEventListener('click', function() {
+      // your existing code here...
+      playSound(); // add this line to play the sound
+    });
+  });

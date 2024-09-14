@@ -20,12 +20,29 @@
             height: 100%;
             object-fit: cover;
         }
+        #skip-button {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        #skip-button:hover {
+          background-color: #444;
+        }
     </style>
 </head>
 <body>
     <div class="video">
         <video id="video" autoplay src="../footage/Cutscene_Inicio.mp4"></video>
     </div>
+    <button id="skip-button">Pular</button>
 
     <script type="text/javascript">
         let vid = document.getElementById("video");
@@ -35,6 +52,11 @@
         vid.addEventListener("ended", function() {
             // Redirect to index.html when the video ends
             window.location.href = "index.html";
+        });
+
+        let skipButton = document.getElementById("skip-button");
+        skipButton.addEventListener("click", function() {
+          window.location.href = "index.html";
         });
     </script>
 </body>

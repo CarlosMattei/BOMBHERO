@@ -26,20 +26,24 @@ $(document).ready(function () {
     });
     let pilhas = $('.pilha'); // Seleciona todos os elementos com a classe 'pilha'
     
-    $('#removePilhas').click(function() {
-        if (!window.senhaVerificada) {
-            alert('Você deve verificar a senha correta primeiro.');
-            return;
-        }
-        
-        if (pilhas.length > 0) {
-            // Remove a última pilha da lista
-            $(pilhas[pilhas.length - 1]).remove();
-            // Atualiza a lista de pilhas
-            pilhas = $('.pilha');
-        } else {
-            alert('Todas as pilhas já foram removidas.');
-        }
+    $('#energia').click(function() {
+
+            if (fioAmareloVerifica == 2) {
+
+                if (pilhas.length !== 0) {
+                    // Remove a última pilha da lista
+                    $(pilhas[pilhas.length - 1]).remove();
+                    // Atualiza a lista de pilhas
+                    pilhas = $('.pilha');
+                    if (pilhas.length == 0) {
+                        vitoria();
+                    }
+
+                }
+            } else if (fioAmareloVerifica == 1) {
+                console.log("nao");
+                window.location.href = 'cutsceneFalha.html';
+            }
     });
 
 });

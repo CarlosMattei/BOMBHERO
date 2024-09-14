@@ -12,6 +12,11 @@
 
     <div id="content"></div>
 
+    <audio id="sound-effect" src="../sounds/click.mp3"></audio>
+    <audio id="sound-effect-alarm" src="../sounds/alarm18s.mp3"></audio>
+    <audio id="sound-effect-senha" src="../sounds/senhaCorreta.mp3"></audio>
+    <audio id="sound-effect-erro" src="../sounds/erro.mp3"></audio>
+
     <div class="toolbar">
         <div class="tesoura">
             <button class="button" id="tesoura"><img class="img" src="../icons/tesouras.png" alt=""></button>
@@ -19,10 +24,6 @@
 
         <div class="sair">
             <button class="button" id="sair"><img class="img" src="../icons/logout.png" alt=""></button>
-        </div>
-
-        <div class="removePilhas">
-            <button class="button" id="removePilhas"><img class="img" src="../icons/pilhabtn.png" alt=""></button>
         </div>
     </div>
     <div class="gameArea">
@@ -74,7 +75,7 @@
 
                 <div class="tampa"></div>
 
-                <div class="compartimentoEnergia">
+                <div class="compartimentoEnergia" id="energia">
                     <div class="pilha" id="pilha1"><img src="../img/pilha.png" alt=""></div>
                     <div class="pilha" id="pilha2"><img src="../img/pilha.png" alt=""></div>
                     <div class="pilha" id="pilha3"><img src="../img/pilha.png" alt=""></div>
