@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Missão Falhada</title>
     <link rel="stylesheet" href="../style/falha.css">
 </head>
+
 <body>
     <div class="container">
 
@@ -18,23 +20,32 @@
             </div>
 
             <div class="continuar">
-                <button id="proximo" onclick="location.href='paginaInicial.html'">Proximo</button>
+                <button id="proximo" onclick="location.href='lideres.html'">Proximo</button>
             </div>
         </div>
 
     </div>
+    <audio id="background-audio" src="../content/focoNaBomba_edit2.mp3" loop></audio>
 
+    <script>
+        window.addEventListener('load', function () {
+            var audio = document.getElementById('background-audio');
+            audio.play().catch(error => {
+                console.log('O áudio não pôde ser reproduzido automaticamente:', error);
+            });
+        });
+    </script>>
     <script type="text/javascript">
         // Função para contar 15 segundos
         function contar() {
             var contador = 15;
-            var intervalo = setInterval(function() {
+            var intervalo = setInterval(function () {
                 document.getElementById("contador").innerHTML = contador;
                 contador--;
                 if (contador < 0) {
                     clearInterval(intervalo);
                     // Redireciona para a próxima página após o contador zerar
-                    location.href = 'paginaInicial.html';
+                    location.href = 'lideres.html';
                 }
             }, 1000); // 1000 milisegundos = 1 segundo
         }
@@ -43,4 +54,5 @@
         contar();
     </script>
 </body>
+
 </html>
