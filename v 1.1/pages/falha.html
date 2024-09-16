@@ -20,12 +20,12 @@
             </div>
 
             <div class="continuar">
-                <button id="proximo" onclick="location.href='lideres.html'">Proximo</button>
+                <button id="proximo" onclick="location.href='paginaInicial.html'">Proximo</button>
             </div>
         </div>
 
     </div>
-    <audio id="background-audio" src="../content/focoNaBomba_edit2.mp3" loop></audio>
+    <audio id="background-audio" src="../content/Mission Failed.mp3" loop></audio>
 
     <script>
         window.addEventListener('load', function () {
@@ -34,7 +34,7 @@
                 console.log('O áudio não pôde ser reproduzido automaticamente:', error);
             });
         });
-    </script>>
+    </script>
     <script type="text/javascript">
         // Função para contar 15 segundos
         function contar() {
@@ -45,7 +45,7 @@
                 if (contador < 0) {
                     clearInterval(intervalo);
                     // Redireciona para a próxima página após o contador zerar
-                    location.href = 'lideres.html';
+                    location.href = 'paginaInicial.html';
                 }
             }, 1000); // 1000 milisegundos = 1 segundo
         }
