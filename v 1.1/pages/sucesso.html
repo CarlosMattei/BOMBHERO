@@ -23,7 +23,16 @@
         </div>
 
     </div>
+<audio id="background-audio" src="../content/succeso1_edit1.mp3" loop></audio>
 
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('background-audio');
+            audio.play().catch(error => {
+                console.log('O áudio não pôde ser reproduzido automaticamente:', error);
+            });
+        });
+    </script>>
     <script type="text/javascript">
         // Função para contar 15 segundos
         function contar() {
