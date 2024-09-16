@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'aron';
+}
+
+@font-face {
+    font-family: aron;
+    src: url(../font/aron/Aron-Regular-BF6556dd3e538a2.ttf);
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center; 
+}
+
+.container {
+    display: flex; /* Add this */
+    flex-direction: column; /* Add this */
+    align-items: center; /* Add this */
+    justify-content: center; /* Add this */
+}
+
+.nomeEquipe {
+    margin-top: -6px;
+    font-size: 30px;
+    background-color: black;
+    border: 1px solid #cdcdcd;
+    font-family: aron;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#comeca {
+    text-align: center;
+    padding: 15px 50px;
+    font-size: 20px;
+    margin-top: 35px;
+    background-color: #31dd95;
+    color: #FFF;
+    font-family: aron;
+    border: none;
+    display: flex; 
+    justify-content: center;    
+}
+
+#comeca:hover {
+    background-color: #2ecc71; /* Change the background color on hover */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
