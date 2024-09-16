@@ -29,10 +29,7 @@ Para jogar o jogo, basta clicar no link "Jogar Agora" acima. Não é necessário
 
 ## Recursos Utilizados
 
-* <i class="fab fa-html5"></i> HTML
-* <i class="fab fa-css3-alt"></i> CSS
-* <i class="fab fa-js-square"></i> JavaScript
-* <i class="fab fa-jquery"></i> jQuery
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,jquery)](https://skillicons.dev)
 
 ## Plano de Desenvolvimento
 
