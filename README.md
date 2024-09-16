@@ -17,6 +17,10 @@ BombHero é um jogo desafiador e emocionante que colocará suas habilidades cogn
 * [Christopher](https://github.com/Christopher1004) - desenvolvedor BackEnd
 * [Yago](https://github.com/yagozeppini) - desenvolvedor Mobile
 
+## Professor Responsavel
+
+* [Marcio Ferraz](https://github.com/marcioferraz81) - Professor de programação WEB
+
 ## Começando
 
 Para jogar o jogo, basta clicar no link "Jogar Agora" acima. Não é necessário instalação ou configuração!
@@ -29,12 +33,16 @@ Para jogar o jogo, basta clicar no link "Jogar Agora" acima. Não é necessário
 
 ## Recursos Utilizados
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,jquery)](https://skillicons.dev)
+* [![My Skills](https://skillicons.dev/icons?i=js)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![My Skills](https://skillicons.dev/icons?i=html)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![My Skills](https://skillicons.dev/icons?i=css)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[![My Skills](https://skillicons.dev/icons?i=jquery)](https://jquery.com/)
 
 ## Plano de Desenvolvimento
 
 * Adicionar novos modos de jogo
 * Melhorar o desempenho do jogo
+
 
 ## Contribuindo
 
