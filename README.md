@@ -33,7 +33,7 @@ Para jogar o jogo, basta clicar no link "Jogar Agora" acima. Não é necessário
 
 ## Recursos Utilizados
 
-* [![My Skills](https://skillicons.dev/icons?i=js)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![My Skills](https://skillicons.dev/icons?i=js)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 [![My Skills](https://skillicons.dev/icons?i=html)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 [![My Skills](https://skillicons.dev/icons?i=css)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 [![My Skills](https://skillicons.dev/icons?i=jquery)](https://jquery.com/)
