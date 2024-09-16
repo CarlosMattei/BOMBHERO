@@ -34,6 +34,6 @@ $('#comecar').click( function() {
     if (currentPage === 'inteligencia') {
         location.href = 'inteligencia.html';
     } else {
-        location.href = 'nomeEquipe.html';
+        location.href = 'cutscene.html';
     }
 });
