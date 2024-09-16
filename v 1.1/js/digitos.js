@@ -2,7 +2,7 @@ let currentTimer = 0; // Variável global para armazenar o valor do timer
 let timerInterval; // Variável para armazenar o identificador do intervalo
 let numerosSelecionados = new Set(); // Para armazenar números distintos
 const maxSelecionados = 4; // Número máximo de números distintos permitidos
-const senhaCorreta = '1234'; // Senha correta
+const senhaCorreta = '5623'; // Senha correta
 window.senhaVerificada = false;
 
 function startTimer(duration, display) {
