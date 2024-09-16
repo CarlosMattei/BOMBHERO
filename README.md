@@ -12,10 +12,10 @@ BombHero é um jogo desafiador e emocionante que colocará suas habilidades cogn
 
 ## Contribuidores
 
-* ![Carlos Henrique](https://avatars.githubusercontent.com/u/CarlosMattei?s=40) [Carlos Henrique](https://github.com/CarlosMattei) - Designer e desenvolvedor FrontEnd
-* ![Caio Costa](https://avatars.githubusercontent.com/u/CaioCosta2JZ?s=40) [Caio Costa](https://github.com/CaioCosta2JZ) - desenvolvedor BackEnd
-* ![Christopher](https://avatars.githubusercontent.com/u/Christopher1004?s=40) [Christopher](https://github.com/Christopher1004) - desenvolvedor BackEnd
-* ![Yago](https://avatars.githubusercontent.com/u/yagozeppini?s=40) [Yago](https://github.com/yagozeppini) - desenvolvedor Mobile
+* [Carlos Henrique](https://github.com/CarlosMattei) - Designer e desenvolvedor FrontEnd
+* [Caio Costa](https://github.com/CaioCosta2JZ) - desenvolvedor BackEnd
+* [Christopher](https://github.com/Christopher1004) - desenvolvedor BackEnd
+* [Yago](https://github.com/yagozeppini) - desenvolvedor Mobile
 
 ## Começando
 
@@ -26,6 +26,13 @@ Para jogar o jogo, basta clicar no link "Jogar Agora" acima. Não é necessário
 * Treine sua memória e habilidades de pensamento rápido
 * Níveis de dificuldade crescentes para manter você desafiado
 * Gameplay envolvente para manter você viciado
+
+## Recursos Utilizados
+
+* <i class="fab fa-html5"></i> HTML
+* <i class="fab fa-css3-alt"></i> CSS
+* <i class="fab fa-js-square"></i> JavaScript
+* <i class="fab fa-jquery"></i> jQuery
 
 ## Plano de Desenvolvimento
 
