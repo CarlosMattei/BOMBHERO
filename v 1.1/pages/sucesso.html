@@ -14,32 +14,14 @@
                 <h1>Operação concluida</h1>
             </div>
             <div class="subtitulo">
-                <p>A missão sera fechada automaticamente em <span id="contador">15</span> segundos</p>
+                <p>A missão sera fechada automaticamente em 15 segundos</p>
             </div>
 
             <div class="continuar">
-                <button id="proximo" onclick="location.href='paginaInicial.html'">Proximo</button>
+                <button id="proximo" onclick="location.href='lideres.html'">Proximo</button>
             </div>
         </div>
 
     </div>
-
-    <script type="text/javascript">
-        function contar() {
-            var contador = 15;
-            var intervalo = setInterval(function() {
-                document.getElementById("contador").innerHTML = contador;
-                contador--;
-                if (contador < 0) {
-                    clearInterval(intervalo);
-                    // Redireciona para a próxima página após o contador zerar
-                    location.href = 'paginaInicial.html';
-                }
-            }, 1000); // 1000 milisegundos = 1 segundo
-        }
-
-        // Chama a função contar ao carregar a página
-        contar();
-    </script>
 </body>
 </html>
